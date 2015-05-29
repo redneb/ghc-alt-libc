@@ -2,7 +2,7 @@
 
 This repository contains precompiled binary releases of [GHC](https://www.haskell.org/ghc/) (The Glasgow Haskell Compiler) for linux using [musl](http://www.musl-libc.org/) and [uClibc](http://www.uclibc.org/) instead of [glibc](https://www.gnu.org/software/libc/).
 
-These are fully bootstrapped (i.e. stage 2) GHC binaries and *not cross compilers*. So they will not work in a typical glibc based linux distribution. You need a complete musl/uclibc based environment to use them. Also, the binaries produced by these compilers will all depend on musl/uclibc and not work on most glibc based distros.
+These are fully bootstrapped (i.e. stage 2) GHC binaries and *not cross compilers*. So they will not work in a typical glibc based linux distribution. You need a complete musl/uclibc based environment to use them. Also, the binaries produced by these compilers will all depend on musl/uclibc and not work on most glibc based distros. On the other hand, statically linked binaries should work everywhere.
 
 #### Downloads
 
