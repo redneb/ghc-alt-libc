@@ -6,7 +6,8 @@ These are fully bootstrapped (i.e. stage 2) GHC binaries and *not cross compiler
 
 ## Downloads
 
-See [releases](https://github.com/redneb/ghc-alt-libc/releases).
+* [musl based releases](https://drive.google.com/folderview?id=0B0zktggRQYRkbGJkbmU0UFFSYUE#list)
+* [uClibc based releases](https://drive.google.com/folderview?id=0B0zktggRQYRkfkxGekxiR1E4Y3dFNER2QlQ1bUV4V1Myb2VTOXZsallyTUVPanpUeXI3SDQ#list)
 
 ## How to use this
 
