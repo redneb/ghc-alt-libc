@@ -1,0 +1,26 @@
+diff --git a/libraries/unix/cbits/execvpe.c b/libraries/unix/cbits/execvpe.c
+index 1d96aa5..66f7322 100644
+--- a/libraries/unix/cbits/execvpe.c
++++ b/libraries/unix/cbits/execvpe.c
+@@ -58,7 +58,7 @@
+  */
+ 
+ int
+-execvpe(char *name, char *const argv[], char **envp)
++execvpe(const char *name, char *const argv[], char *const envp[])
+ {
+     register int lp, ln;
+     register char *p;
+diff --git a/libraries/unix/include/execvpe.h b/libraries/unix/include/execvpe.h
+index 676fc72..27d0b21 100644
+--- a/libraries/unix/include/execvpe.h
++++ b/libraries/unix/include/execvpe.h
+@@ -19,7 +19,7 @@
+ #endif
+ 
+ #if !defined(_MSC_VER) && !defined(__MINGW32__) && !defined(_WIN32)
+-extern int execvpe(char *name, char *const argv[], char **envp);
++extern int execvpe(const char *name, char *const argv[], char *const envp[]);
+ extern void pPrPr_disableITimers (void);
+ #endif
+ 

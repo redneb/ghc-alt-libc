@@ -1,0 +1,41 @@
+diff --git a/libraries/base/base.cabal b/libraries/base/base.cabal
+index 1172f2a..6374414 100644
+--- a/libraries/base/base.cabal
++++ b/libraries/base/base.cabal
+@@ -314,6 +314,7 @@ Library
+         cbits/primFloat.c
+         cbits/rts.c
+         cbits/sysconf.c
++        cbits/eventfd_write.c
+ 
+     include-dirs: include
+     includes:
+diff --git a/libraries/base/cbits/eventfd_write.c b/libraries/base/cbits/eventfd_write.c
+new file mode 100644
+index 0000000..096f5f1
+--- /dev/null
++++ b/libraries/base/cbits/eventfd_write.c
+@@ -0,0 +1,10 @@
++#include "HsBaseConfig.h"
++
++#if HAVE_EVENTFD && !HAVE_EVENTFD_WRITE
++#include <unistd.h>
++#include <stdint.h>
++
++int eventfd_write(int fd, uint64_t value) {
++	return (write(fd, &value, sizeof(value)) == sizeof(value)) ? 0 : -1;
++}
++#endif
+diff --git a/libraries/base/configure.ac b/libraries/base/configure.ac
+index 4835a2b..5a04e28 100644
+--- a/libraries/base/configure.ac
++++ b/libraries/base/configure.ac
+@@ -47,7 +47,7 @@ AC_CHECK_FUNCS([clock_gettime])
+ AC_CHECK_FUNCS([getclock getrusage times])
+ AC_CHECK_FUNCS([_chsize ftruncate])
+ 
+-AC_CHECK_FUNCS([epoll_ctl eventfd kevent kevent64 kqueue poll])
++AC_CHECK_FUNCS([epoll_ctl eventfd eventfd_write kevent kevent64 kqueue poll])
+ 
+ # event-related fun
+ 
