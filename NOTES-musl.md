@@ -1,14 +1,14 @@
-### musl based binary releases of GHC
+# musl based binary releases of GHC
 
-#### Motivation
+## Motivation
 
 Static linking with glibc is problematic. On the other hand, static linking can simplify deployment and distribution of binaries. Unlike glibc, musl officially supports static linking and in fact it has been optimized for it.
 
-#### Known issues
+## Known issues
 
 None so for.
 
-#### Patches used
+## Patches used
 
  * For 7.10.1: *none*.
  * For 7.8.4: [fix-execvpe-signature-ghc-7.8.4.patch](patches/fix-execvpe-signature-ghc-7.8.4.patch).
