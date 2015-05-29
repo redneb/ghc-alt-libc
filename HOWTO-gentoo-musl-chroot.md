@@ -1,4 +1,4 @@
-Here's a quick and dirty way to setup a musl based chroot environment 
+Here's a quick and dirty way to set up a musl based chroot environment 
 using the experimental gentoo image for x86_64:
 
     CHROOT_PATH=/var/tmp/gentoo-musl
