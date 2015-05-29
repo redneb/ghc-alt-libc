@@ -8,6 +8,12 @@ Static linking with glibc is problematic. On the other hand, static linking can 
 
 None so for.
 
+## Release notes
+
+ * For 7.10.1: Compiled against `musl-1.1.8` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
+ * For 7.8.4: Compiled against `musl-1.1.8` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
+ * For 7.6.3: Compiled against `musl-1.1.8` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
+
 ## Patches used
 
  * For 7.10.1: *none*.
