@@ -10,6 +10,7 @@ None so for.
 
 ## Release notes
 
+ * For 8.0.2: Compiled against `musl-1.1.15` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.6`.
  * For 8.0.1: Compiled against `musl-1.1.14` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
  * For 7.10.3: Compiled against `musl-1.1.12` and `linux-headers-3.1` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
  * For 7.10.2: Compiled against `musl-1.1.10` and `linux-headers-3.1` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
