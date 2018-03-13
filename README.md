@@ -15,5 +15,5 @@ You need a complete musl/uClibc based environment. See [here](HOWTO-gentoo-musl-
 
 ## Notes
 
- * [Notes](NOTES-musl.md) for the musl release.
- * [Notes](NOTES-uClibc.md) for the uClibc release.
+ * [Notes](NOTES-musl.md) for the musl releases.
+ * [Notes](NOTES-uClibc.md) for the uClibc releases.
