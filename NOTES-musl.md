@@ -10,6 +10,18 @@ None so for.
 
 ## Release notes
 
+ * For 8.4.1: Compiled against `musl-1.1.19` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`. I used `gcc-6.4.0` to compile this. Gentoo's gcc now produces pie binaries by default. I wasn't able to make that work with ghc, so I had to pass the `-no-pie` everywhere, by using the following `build.mk`
+ ```
+V=1
+HADDOCK_DOCS=NO
+HSCOLOUR_SRCS=NO
+BUILD_SPHINX_HTML=NO
+BUILD_SPHINX_PDF=NO
+BeConservative=YES
+SRC_HC_OPTS+= -optc-no-pie -optl-no-pie
+SRC_CC_OPTS+= -no-pie
+SRC_LD_OPTS+= -no-pie
+ ```
  * For 8.2.1: Compiled against `musl-1.1.16` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`.
  * For 8.0.2: Compiled against `musl-1.1.15` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.6`.
  * For 8.0.1: Compiled against `musl-1.1.14` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.5`.
