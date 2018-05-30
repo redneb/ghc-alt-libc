@@ -10,7 +10,7 @@ None so for.
 
 ## Release notes
 
- * For 8.4.1/8.4.2: Compiled against `musl-1.1.19` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`. I used `gcc-6.4.0` to compile this. Gentoo's gcc now produces pie binaries by default. I wasn't able to make that work with ghc, so I had to pass the `-no-pie` everywhere, by using the following `build.mk`
+ * For 8.4.1/8.4.2/8.4.3: Compiled against `musl-1.1.19` and `linux-headers-3.16` on a gentoo system. Depends on `libgmp.so.10` and `libncursesw.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`. I used `gcc-6.4.0` to compile this. Gentoo's gcc now produces pie binaries by default. I wasn't able to make that work with ghc, so I had to pass the `-no-pie` everywhere, by using the following `build.mk`
  ```
 V=1
 HADDOCK_DOCS=NO
