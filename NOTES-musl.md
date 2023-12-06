@@ -10,7 +10,7 @@ None so for.
 
 ## Release notes
 
- * For 9.2.7/9.2.8/9.4.5/9.4.6/9.6.2/9.6.3: Compiled against `musl-1.2.3` and `linux-headers-6.1` on a gentoo system. Depends on `libgmp.so.10` and `libtinfow.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`.
+ * For 9.2.7/9.2.8/9.4.5/9.4.6/9.6.2/9.6.3/9.8.1: Compiled against `musl-1.2.3` and `linux-headers-6.1` on a gentoo system. Depends on `libgmp.so.10` and `libtinfow.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`.
  * For 9.4.4: Compiled against `musl-1.2.3` and `linux-headers-5.15` on a gentoo system. Depends on `libgmp.so.10` and `libtinfow.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`.
  * For 8.10.5/8.10.6/8.10.7/9.2.1/9.0.2/9.2.4/9.4.3: Compiled against `musl-1.2.1` and `linux-headers-5.10` on a gentoo system. Depends on `libgmp.so.10` and `libtinfow.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`.
  * For 8.10.3/8.10.4/9.0.1: Compiled against `musl-1.2.1` and `linux-headers-4.14` on a gentoo system. Depends on `libgmp.so.10` and `libtinfow.so.6`. The `--disable-ld-override` flag was used to configure the sources. The same flag should probably be used for installation too, i.e. `./configure --disable-ld-override --prefix=...`.
